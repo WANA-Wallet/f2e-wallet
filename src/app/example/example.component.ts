@@ -1,5 +1,5 @@
-import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core'
-import {NgbModalConfig, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core'
+import { NgbModalConfig, NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { WalletName, WalletReadyState } from '@solana/wallet-adapter-base'
 import { ConnectionStore, WalletStore } from '@heavy-duty/wallet-adapter'
 import { concatMap, defer, first, from, map, Observable, throwError } from 'rxjs'

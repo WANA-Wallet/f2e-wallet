@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { ConnectionStore, WalletStore } from '@heavy-duty/wallet-adapter';
-import {
-  PhantomWalletAdapter,
-  SlopeWalletAdapter,
-  SolflareWalletAdapter,
-  SolongWalletAdapter,
-} from '@solana/wallet-adapter-wallets';
+import { PhantomWalletAdapter, SlopeWalletAdapter, SolflareWalletAdapter, SolongWalletAdapter } from '@solana/wallet-adapter-wallets';
 
 
 @Component({
@@ -14,7 +9,7 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MamaM';
+  title = 'f2e-wallet';
   constructor(
       private readonly _hdConnectionStore: ConnectionStore,
       private readonly _hdWalletStore: WalletStore,

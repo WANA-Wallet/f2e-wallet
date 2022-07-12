@@ -1,0 +1,20 @@
+<ng-container *ngIf="(connected$ | async) === false">
+  <div *ngIf="!isShowWalletSelect" (click)="onBtnClick()">Connect</div>
+
+  <ng-container *ngIf="isShowWalletSelect">
+    <select [ngModel]="walletName$ | async" (ngModelChange)="onSelectWallet($event)">
+      <option value="default" disabled>Select a wallet</option>
+      <option *ngFor="let wallet of wallets$ | async" [ngValue]="wallet.adapter.name">
+        {{ wallet.adapter.name }} ({{ wallet.readyState }})
+      </option>
+    </select>
+  </ng-container>
+</ng-container>
+
+<ng-container *ngIf="connected$ | async">
+  <div (click)="onDisconnect()">Disconnect</div>
+</ng-container>
+
+<ng-template #loading>
+  <div>Connecting...</div>
+</ng-template>
