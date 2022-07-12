@@ -1,0 +1,219 @@
+@font-face {
+  font-family: Genju;
+  src: url("assets/font/GenJyuuGothic-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  font-size: 100%;
+  font-family: Genju, Verdana, sans-serif;
+}
+
+.effect-text-brand {
+  color: var(--brand);
+  text-shadow:
+    -2px -2px 3px var(--dim),
+    -2px -1px 3px var(--dim),
+    -2px 0 3px var(--dim),
+    -2px +1px 3px var(--dim),
+    -2px +2px 3px var(--dim),
+
+    -1px -2px 3px var(--dim),
+    -1px -1px 3px var(--dim),
+    -1px 0 3px var(--dim),
+    -1px +1px 3px var(--dim),
+    -1px +2px 3px var(--dim),
+
+    0 -2px 3px var(--dim),
+    0 -1px 3px var(--dim),
+    0 0 3px var(--dim),
+    0 +1px 3px var(--dim),
+    0 +2px 3px var(--dim),
+
+    +1px -2px 3px var(--dim),
+    +1px -1px 3px var(--dim),
+    +1px 0 3px var(--dim),
+    +1px +1px 3px var(--dim),
+    +1px +2px 3px var(--dim),
+
+    +2px -2px 3px var(--dim),
+    +2px -1px 3px var(--dim),
+    +2px 0 3px var(--dim),
+    +2px +1px 3px var(--dim),
+    +2px +2px 3px var(--dim);
+}
+
+.effect-text-light {
+  color: var(--bs-light);
+  text-shadow:
+    -2px -2px 3px var(--gloomy),
+    -2px -1px 3px var(--gloomy),
+    -2px 0 3px var(--gloomy),
+    -2px +1px 3px var(--gloomy),
+    -2px +2px 3px var(--gloomy),
+
+    -1px -2px 3px var(--gloomy),
+    -1px -1px 3px var(--gloomy),
+    -1px 0 3px var(--gloomy),
+    -1px +1px 3px var(--gloomy),
+    -1px +2px 3px var(--gloomy),
+
+    0 -2px 3px var(--gloomy),
+    0 -1px 3px var(--gloomy),
+    0 0 3px var(--gloomy),
+    0 +1px 3px var(--gloomy),
+    0 +2px 3px var(--gloomy),
+
+    +1px -2px 3px var(--gloomy),
+    +1px -1px 3px var(--gloomy),
+    +1px 0 3px var(--gloomy),
+    +1px +1px 3px var(--gloomy),
+    +1px +2px 3px var(--gloomy),
+
+    +2px -2px 3px var(--gloomy),
+    +2px -1px 3px var(--gloomy),
+    +2px 0 3px var(--gloomy),
+    +2px +1px 3px var(--gloomy),
+    +2px +2px 3px var(--gloomy);
+}
+
+.hamburger-list {
+  z-index: 2;
+}
+.hamburger-menu {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  padding: 1.6rem;
+  border: solid 3px rgba(var(--bs-white-rgb), 0.1);
+  z-index: 1;
+}
+.menu {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+.footer-menu {
+  font-size: 0.9rem;
+  line-height: 1.45rem;
+}
+@media (min-width: 576px) {
+  .hamburger-menu {
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 1.8rem;
+  }
+  .menu {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .footer-menu {
+    font-size: 1.5em;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-menu {
+    top: 2.2rem;
+    right: 2.2rem;
+    padding: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .hamburger-menu {
+    top: 2.5rem;
+    right: 2.5rem;
+    padding: 2.5rem;
+  }
+}
+
+.main-image {
+  background-image: url('assets/image/main_mobile.png')
+}
+@media (min-width: 992px) {
+  .main-image {
+    background-image: url('assets/image/main_website.png')
+  }
+}
+
+/* 避免擋到主圖 */
+.main-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 44vh;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .main-btn {
+    top: 38vh;
+  }
+}
+
+.mint-coming-soon {
+  box-shadow: 0 0 1rem 0.3rem rgba(255, 255, 255, 0.3);
+}
+
+.mint-progress-bar {
+  border-radius: 6px;
+}
+
+.dress-accessory-box {
+  box-shadow: 2px 5px 5px rgba(var(--bs-black-rgb), 0.5);
+}
+
+.dress-accessory {
+  border-radius: 1.5rem;
+}
+
+.dress img {
+  position: absolute;
+  display:inline-block;
+  height:100%;
+}
+
+.main-body-box {
+  position: relative;
+}
+
+.main-body {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.main-body .swiper-slide img{
+  border-radius: 1rem;
+}
+
+.roadmap-box {
+
+}
+
+.article-card {
+  padding: 0;
+  box-shadow: 0 0 0.8rem 0.1rem rgba(255, 255, 255, 0.2);
+}
+
+/* extend swiper */
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '';
+}
+
+.dress-accessory-box .swiper-button-prev, .dress-accessory-box .swiper-button-next {
+  opacity: 25%;
+}
+@media (min-width: 576px) {
+  .dress-accessory-box .swiper-button-prev, .dress-accessory-box .swiper-button-next {
+    opacity: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .dress-accessory-box .swiper-button-prev, .dress-accessory-box .swiper-button-next {
+    opacity: 100%;
+  }
+}
