@@ -2,10 +2,12 @@
   <div *ngIf="!isShowWalletSelect" (click)="onBtnClick()">Connect</div>
 
   <ng-container *ngIf="isShowWalletSelect">
-    <select [ngModel]="walletName$ | async" (ngModelChange)="onSelectWallet($event)">
+    <select [ngModel]="walletName$ | async" (ngModelChange)="onSelectWallet($event)" class="fs-5 bg-white text-black" style="width: 10rem">
       <option value="default" disabled>Select a wallet</option>
       <option *ngFor="let wallet of wallets$ | async" [ngValue]="wallet.adapter.name">
-        {{ wallet.adapter.name }} ({{ wallet.readyState }})
+        <span *ngIf="wallet.readyState === 'Installed'">{{ wallet.adapter.name }} (Installed)</span>
+        <span *ngIf="wallet.readyState === 'NotDetected'">請安裝{{ wallet.adapter.name }}套件</span>
+        <span *ngIf="wallet.readyState === 'Unsupported'">{{ wallet.adapter.name }}暫不支援</span>
       </option>
     </select>
   </ng-container>
