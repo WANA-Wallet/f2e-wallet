@@ -50,7 +50,7 @@ export class WalletComponent implements OnInit {
   }
 
   onSelectWallet(walletName: WalletName) {
-    this._walletStore.selectWallet(walletName);
+    this._walletStore.selectWallet('Phantom' as WalletName);
     this.isShowWalletSelect = false;
   }
 
